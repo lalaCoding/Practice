@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>社交界面</title>
+		<!--
+		1.最左侧一列要求自适应浏览器高度，左上面4个按钮相对浏览器左上角固定位置，左下方两个按钮相对浏览器左下角固定位置
+		2.左侧第二列(蓝色背景色)导航列固定宽度，高度也是自适应浏览器高度，最下面的Monthly Goals部分的内容相对浏览器下边固定位置
+		3.整个白色区域自适应宽度，右上方的人脸，名字部分相对浏览器右上角固定位置
+		4.白色区域左侧列固定宽度，右侧列自适应宽度
+		-->
+		<link rel="stylesheet" href="css/style.css" />
+	</head>
+	<body>
+		<div class="container">
+			<div class="left_navbar">
+				<ul class="top_icons">
+					<li id="airplane"><span class="active_dot1"></span><a href=""><img src="img/icon_01.png" alt="飞机" /></a></li>
+					<li id="rocket"><a href=""><img src="img/icon_02.png" alt="火箭" /></a></li>
+					<li id="game"><a href=""><img src="img/icon_03.png" alt="游戏" /></a></li>
+					<li id="add"><a href=""></a></li>
+				</ul>
+				<ul class="bottom_icons">
+					<li><a href=""><img src="img/icon_share.png" /></a></li>
+					<li></li>
+					<li></li>
+					<li><a href=""><img src="img/icon_setting.png" /></a></li>
+				</ul>
+			</div>
+			<div class="left_menu">
+				<div class="menu1">
+					<ul class="menu1_info">
+						<li>MENU<a src="img/icon_setting.png" class="setting_icon" href=""><img src="img/icon_setting.png" /></a></li>
+						<li class="select"><a href="">OverView</a></li>
+						<li class="select"><a href="">Sales</a><i><div class="new_sale">54</div></i></li>
+						<li class="select"><a href="">Your Staff</a></li>
+						<li class="select"><a href="">Analytics &amp; Targeting</a></li>
+						<li class="select"><a href="">What's New</a></li>
+					</ul>
+				</div>
+				<div class="menu2">
+					<ul class="menu2_info">
+						<li>YOUR PRODUCTS<a src="img/icon_setting.png" class="setting_icon" href=""><img src="img/icon_setting.png" /></a></li>
+						<li class="select"><a href=""><img src="img/icon_book.png" />&nbsp;&nbsp;Books</a></li>
+						<li class="select"><a href=""><img src="img/icon_Camera.png" />&nbsp;&nbsp;Tutorials</a></li>
+						<li class="select"><a href=""><img src="img/icon_Pic.png" />&nbsp;&nbsp;Stocks</a></li>
+						<li class="select"><a href=""><img src="img/icon_Chart.png" />&nbsp;&nbsp;infographics</a></li>
+					</ul>
+				</div>
+				<div class="menu3">
+					<ul class="menu3_info">
+						<li>DASHBOARD<a src="img/icon_setting.png" class="setting_icon" href=""><img src="img/icon_setting.png" /></a></li>
+						<li class="select"><span class="active_dot2"></span><a href="">Messages</a><i><div class="new_msg">21</div></i></li>
+						<li class="select"><a href="">Connections</a></li>
+						<li class="select"><a href="">Integrations</a><i><div class="new_alrt">!</div></i></li>
+						<li class="select"><a href="">Account Settings</a></li>
+						<li class="select"><a href="">App Settings</a></li>
+					</ul>
+				</div>
+				<div class="account_info">
+					<div class="text_info">
+						<span>Monthly Goals</span>
+						<span>$580/$3200</span>
+					</div>
+					<div class="progress">
+						<div class="fill"></div>
+					</div>
+				</div>
+			</div>
+			<div class="content_container">
+				<div class="header">
+					<div class="info_bar">
+						<span id="head_title">Messages</span>
+						<div class="profile">
+							<a class="user_photo" href=""><span id="circle"></span></a>
+							<div class="user_info">
+								<h3>Jordan J.</h3>
+								<p>Administrator</p>
+							</div>
+							<a href="" id="account_options"></a>
+						</div>
+					</div>
+					<div class="function_bar">
+						<div class="search_box">
+							<form action="#" method="get" id="search_content">
+								<input type="text" placeholder="Search"/>
+								<button type="submit"></button>
+							</form>
+						</div>
+						<div class="options_box">
+							<span class="people_name">Bessie Berry<i></i></span>
+							<div class="btn_box">
+								<div class="btn_group1">
+									<div class="btn_box1">
+										<a id="btn_add"></a>
+										<a id="btn_upload"></a>
+										<a id="btn_delet"></a>
+									</div>
+								</div>
+								<div class="btn_group2">
+									<span class="page_number">1 of 28</span>
+									<div class="btn_box2">
+										<a id="btn_pageup"></a>
+										<a id="btn_pagedown"></a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="main_box">
+					<div class="left_box">
+						<div class="chat_box active_box">
+							<div class="chat_card">
+								<div class="people_info">
+									<div class="people_photo">
+										<img src="img/img_14.png" alt="Bessie Berry"/>
+									</div>
+									<div class="people_account">
+										<span class="people_id" id="people_active"><i id="people_status"></i>Bessie Berry</span>
+										<p class="account_kind">Twitter</p>
+									</div>
+									<i class="chat_date">3m</i>
+								</div>
+								<div class="preview_box">
+									<p class="msg_preview">I pay for the 4Mb/sec down, 512 Kb/sec up service from O2. In fact, it's relatively quick, and stable...</p>
+									<i class="new_topic">4</i>
+								</div>
+							</div>
+						</div>
+						<div class="chat_box">
+							<div class="chat_card">
+								<div class="people_info">
+									<div class="people_photo">
+										<img src="img/img_21.png" alt="Victor Weber"/>
+									</div>
+									<div class="people_account">
+										<span class="people_id">Victor Weber</span>
+										<p class="account_kind">Adobe</p>
+									</div>
+									<i class="chat_date">8m</i>
+								</div>
+								<div class="preview_box">
+									<p class="msg_preview">I shared this on my fb wall a few months back, and I thought I'd share it here again because it's such a great...</p>
+								</div>
+							</div>
+						</div>
+						<div class="chat_box">
+							<div class="chat_card">
+								<div class="people_info">
+									<div class="people_photo">
+										<img src="img/img_27.png" alt="Dustin Benson"/>
+									</div>
+									<div class="people_account">
+										<span class="people_id">Dustin Benson</span>
+										<p class="account_kind">Facebook</p>
+									</div>
+									<i class="chat_date">Yesterday</i>
+								</div>
+								<div class="preview_box">
+									<p class="msg_preview">If there is anyone who needs an invitation please add yourself in the comments of this post!</p>
+								</div>
+							</div>
+						</div>
+						<div class="chat_box">
+							<div class="chat_card">
+								<div class="people_info">
+									<div class="people_photo">
+										<img src="img/img_30.png" alt="Jack Mason"/>
+									</div>
+									<div class="people_account">
+										<span class="people_id">Jack Mason</span>
+										<p class="account_kind">Yahoo</p>
+									</div>
+									<i class="chat_date">Yesterday</i>
+								</div>
+								<div class="preview_box">
+									<p class="msg_preview">BruteDC is a peer-to-peer movie+tv series sharing and downloading platform which works on intranet inside...</p>
+								</div>
+							</div>
+						</div>
+						<div class="chat_box">
+							<div class="chat_card">
+								<div class="people_info">
+									<div class="people_photo">
+										<img src="img/img_32.png" alt="Stephen Shelton"/>
+									</div>
+									<div class="people_account">
+										<span class="people_id">Stephen Shelton</span>
+										<p class="account_kind">Snapchat</p>
+									</div>
+									<i class="chat_date">13 Jun</i>
+								</div>
+								<div class="preview_box">
+									<p class="msg_preview">Yes, p2p traffic is often filtered (QoSed). Although i do use BT on O2 wires, and in good days dl speed...</p>
+								</div>
+							</div>
+						</div>
+						<div class="chat_box">
+							<div class="chat_card">
+								<div class="people_info">
+									<div class="people_photo">
+										<img src="img/img_42.png" alt="Sally Willis"/>
+									</div>
+									<div class="people_account">
+										<span class="people_id">Sally Willis</span>
+										<p class="account_kind">Twitter</p>
+									</div>
+									<i class="chat_date">12 Jun</i>
+								</div>
+								<div class="preview_box">
+									<p class="msg_preview">Yes, it's O2: 'internet extreme', which is no longer offered.</p>
+								</div>
+							</div>
+						</div>
+						<div class="chat_box">
+							<div class="chat_card">
+								<div class="people_info">
+									<div class="people_photo">
+										<img src="img/img_44.png" alt="Robert Patton"/>
+									</div>
+									<div class="people_account">
+										<span class="people_id">Robert Patton</span>
+										<p class="account_kind">A Team</p>
+									</div>
+									<i class="chat_date">9 Jun</i>
+								</div>
+								<i class="chat_date"></i>
+								<div class="preview_box">
+									<p class="msg_preview">I change my service from this 4Mb plan to their much cheaper 8Mb plan, my speed will dramatically decrease.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="right_box">
+						<div class="histroy_conversation">
+							<div class="people_reply">
+								<div class="photo"><img src="img/img_14.png"/></div>
+								<div class="text_box">
+									<span class="name_time"><b class="chat_name">Bessie Berry</b><i class="chat_time">8:31 AM</i></span>
+									<div class="text_container">
+										<p>Hi guys Ive got the O2 package and have really slow internet. A speed check online said i can get 3mbps but it seems more like 0.5 these days, just freezing and taking ages to open pages and open audio files for example. I have decided to switch to the UPC package which offers 10mbps but do you think i will get it?</p>
+									</div>
+								</div>
+							</div>
+							<div class="your_reply">
+								<div class="photo"><img src="img/img_19.png"/></div>
+								<div class="text_box">
+									<span class="name_time"><b class="chat_name">Jordan Jackson</b><i class="chat_time">8:31 AM</i></span>
+									<div class="text_container">
+										<p>I have internet for 9 month and nevere could benefit from the full capacity of 5Mbit/s as it is filtered by O2 when it detect traffic on public p2p sharing in my situation all my internet speed slows to 512Kbit/s. I never had 400KB/s on when downloading from p2p public servers like torrent emule etc. I downoad with 500KB/s from private trakers instead. So conlcusion O2 block trafic on p2p connections. I have made hundreds of test in Italy and Sweden and Romania with the same file to doanload with the same setting and same antivirus and just needed to open ports in firewall and forward same ports and the speed was at full capacity in 1 minute. here in 9 month never had this luck.</p>
+									</div>
+								</div>
+							</div>
+							<div class="event_time">Tuesday</div>
+						</div>
+						<div class="recent_conversation">
+							<div class="people_reply">
+								<div class="photo"><img src="img/img_14.png"/></div>
+								<div class="text_box">
+									<span class="name_time"><b class="chat_name">Bessie Berry</b><i class="chat_time">8:31 AM</i></span>
+									<div class="text_container">
+										<p>Funny comparison. so would the proper antivirus not slow down the internet as much or do you mean a freebie doenst protect the computer from viruses?</p>
+									</div>
+								</div>
+							</div>
+							<div class="your_reply">
+								<div class="photo"><img src="img/img_19.png"/></div>
+								<div class="text_box">
+									<span class="name_time"><b class="chat_name">Jordan Jackson</b><i class="chat_time">8:31 AM</i></span>
+									<div class="text_container">
+										<p>I pay for the 4Mb/sec down, 512 Kb/sec up service from O2, and haven't had any problems. In fact, it's relatively quick, and stable. It's not perfect, but I really don't have issues, as long as I keep track of what I'm doing on it. I max out at about 3 Mb/sec down, and 350 Kb/sec up. Probably because of a noisy telephone line, not because I'm being throttled. When my uploads go over 25 KB/sec (note, bytes, not bits), my download speed suffers. This is expected, as downloads require upload bandwidth as well. </p>
+										<div class="img_container">
+											<div class="chat_img">
+												<img src="img/img_34.png"/>
+												<div class="mask"></div>
+											</div>
+											<div class="chat_img">
+												<img src="img/img_35.png"/>
+												<div class="mask"></div>
+											</div>
+											<div class="blank_box"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="event_time">New Messages</div>
+						</div>
+						<div class="new_conversation">
+							<div class="people_reply">
+								<div class="photo"><img src="img/img_14.png"/></div>
+								<div class="text_box">
+									<span class="name_time"><b class="chat_name">Bessie Berry</b><i class="chat_time">8:31 AM</i></span>
+									<div class="text_container">
+										<p>I pay for the 4Mb/sec down, 512 Kb/sec up service from O2. In fact, it's relatively quick, and stable. It's not perfect, but I really don't have issues, as long as I keep track of what I'm doing on it. </p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="reply_box">
+							<form method="get" action="#" id="user_reply">
+								<button type="submit" id="btn_reply"></button>
+								<input type="text" id="reply_text" value="Well, kinda both :) but more of that second option, i`ve seen many systems infected and crawling with"/>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
